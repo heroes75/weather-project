@@ -1,0 +1,41 @@
+const DOMDisplay = () => {
+    const form = document.createElement("form");
+    const label = document.createElement("label");
+    const labeltext = document.createElement("span");
+    const input = document.createElement("input");
+    const button = document.createElement("button");
+    const informationContainer = document.createElement("div");
+    const cityName = document.createElement("sapn");
+    const time = document.createElement("span");
+    const temperature = document.createElement("span");
+    const wind = document.createElement("span");
+    const humidity = document.createElement("span");
+    form.setAttribute("id", "form");
+    label.setAttribute("id", "label");
+    label.setAttribute("for", "input");
+    labeltext.setAttribute("id", "label-text");
+    input.setAttribute("name", "input");
+    input.setAttribute("id", "input");
+    input.setAttribute("id", "input");
+    button.setAttribute("required", "");
+    informationContainer.setAttribute("id", "information-container");
+    cityName.setAttribute("id", "city-name");
+    time.setAttribute("id", "time");
+    temperature.setAttribute("id", "temperature");
+    wind.setAttribute("id", "wind");
+    humidity.setAttribute("id", "humidity");
+    button.textContent = "send";
+    labeltext.textContent = "Enter your city name";
+    document.body.appendChild(form);
+    form.appendChild(label);
+    form.appendChild(labeltext);
+    label.appendChild(input);
+    label.appendChild(button);
+    document.body.appendChild(informationContainer);
+    informationContainer.appendChild(cityName);
+    informationContainer.appendChild(time);
+    informationContainer.appendChild(temperature);
+    informationContainer.appendChild(wind);
+    informationContainer.appendChild(humidity);
+}
+export default DOMDisplay
